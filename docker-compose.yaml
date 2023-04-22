@@ -1,0 +1,8 @@
+services:
+  techtalenthub-db:
+    image: mongo:5.0.0
+    container_name: techtalenthub-db
+    ports:
+      - 27017:27017
+    volumes:
+      - ./docker/db:/data/db
